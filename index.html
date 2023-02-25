@@ -2,194 +2,237 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" inner="IE=edge">
+    <meta name="viewport" inner="width=device-width, initial-scale=1.0">
+    <title>Salatri.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/m.menu.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo.svg" alt="logo">
-            <a href="#" class="logo_name">Salatri.</a>
-        </div>
-        <nav>
-           <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Collection</a></li>
-               <li><a href="#">Shop</a></li>
-               <li><a href="#"">Product</a></li>
-           </ul>
-           <div class="btn">
-                <a href="#"><img src="/img/shop.svg" alt="shop" class="btn_shop"></a>   
-                <a href="#"><img src="/img/search.svg" alt="search"></a>   
-           </div>
-        </nav>
-        <div class="descr">
-            <h1 class="descr_name">Decorate your home</h1>
-            <div class="header"><a href="#">Feel your home</a><br>with a modern design space</div> 
-        </div>
-        <div class="box">
-            <div class="button"><a href="#">Discover</a></div>
-            <a href="#" class="ellipse">
-                <img src="/img/bg/polygon.svg" alt="playpause" class="playpause">
-            </a>
-            <a class="watch">Watch video</a>
+    <header class="header">
+        <!-- <div class="topnav"> -->
+        <!-- <div class="container"> -->
+            <div class="container navbar">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                    <a href="#" class="logo_name">Salatri.</a>
+                </div>
+                <div class="burger-menu burger-menu--closed">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="menu-dropdown">
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#product">Product</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <a href="#"><img src="/img/btn/shop.svg" alt="shop" class="btn_shop"></a>   
+                    <a href="#"><img src="/img/btn/search.svg" alt="search" class="btn_search"></a>   
+                </div>
+            </div>
+        <!-- </div> -->
+        <!-- </div>  -->
+    </header>
+
+    <section class="home" id="home"> 
+        <div class="container">
+            <div class="descr">
+                <h1 class="name">Decorate your home</h1>
+                <div class="title title__indent-top">
+                    <p class="decor">Feel your home</p>
+                    <p>with a modern design space</p>
+                </div> 
+                <div class="shell">
+                    <button class="button">Discover</button>
+                    <a href="#" class="ellipse">
+                        <img src="/img/bg/polygon.svg" alt="playpause" class="playpause">
+                    </a>
+                    <a href="#" class="watch">Watch video</a>
+                </div>
+            </div>
         </div>
         <div class="bg-img">
             <img src="/img/bg/circle.svg" alt="circle" class="bg_img-circle">
             <img src="/img/bg/ellipse.png" alt="ellipse" class="bg-img_ellipse">
-        </div>
+        </div> 
         <div class="tracery">
+            <!-- <div class="tracery_vase"></div> -->
             <div class="tracery_flowers">
-                <img src="/img/bg/front.svg" alt="flower">
-                <img src="/img/bg/flower-front.svg" alt="flower">
+                <img src="/img/bg/front.svg" alt="flower" class="tracery_front">
+                <img src="/img/bg/flower-front.svg" alt="flower" class="tracery_front">
             </div>
         </div>
-        <div class="shell">
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-                <div class="bubble"></div>
-        </div>
-    </header>
-
-    <section class="important">
-        <div class="block">
-            <div class="img-block">
-                <img src="/img/plant.jpg" alt="plant" class="img-fl">
-            </div>
-            <div class="text">
-                <div class="header">Think’s important <br><a href="#">Flowers in your area</a></div>
-                <div class="text_subheader">People have been using natural objects, such as tree stumps, rocks and moss, as furniture since thebeginning of human civilisation. </div>
-                <div class="button"><a href="#">Read More</a></div>
-            </div>
-            <div class="bg-plant">
-                <img src="/img/bg/1plant.svg" alt="plant">
-            </div>
+        <div class="bubble-tracery">
+            <div class="bubble bubble_tracery"></div>
+            <div class="bubble bubble_tracery"></div>
+            <div class="bubble bubble_tracery"></div>
         </div>
     </section>
 
-    <section class="variety">
-        <div class="block block_upend">
-            <div class="img-block">
-                <img src="/img/fl.jpg" alt="flower" class="img-fl">
+    <section id="about" class="important">
+        <div class="container content d-flex">
+            <div class="content__indents">
+                <img src="/img/plant.jpg" alt="plant" class="content__img">
             </div>
-            <div class="text text_upend">
-                <div class="header header_w">Decorate your home <br>with a <a href="#">variety of flowers</a></div>
-                <div class="text_subheader">flowers present a seemingly endless variety of combinations. They range in size from minute blossoms to giant blooms. In some plants, such as poppy, magnolia, tulip, and petunia, each flower is relatively large </div>
-                <div class="button"><a href="#">Read More</a></div>
-            </div>
-            <div class="bg-plant bg-plant_left">
-                <img src="/img/bg/2plant.svg" alt="plant">
-            </div>
-        </div>
-    </section>
-
-    <section class="value">
-        <div class="header">More Value from<br> <a href="#">this Flowers</a></div>
-        <nav class="value_nav">
-            <ul>
-                <li><a href="#" class="value_link">Special Deals</a></li>
-                <li><a href="#" class="value_link">Populer</a></li>
-                <li><a href="#" class="value_link">Recommendation</a></li>
-                <li><a href="#" class="value_link">Best Price</a></li>
-            </ul>
-            <div class="swiper">
-                <a href="#" class="left"></a>
-                <a href="#" class="right"></a>
-            </div>
-        </nav>
-        <div class="value_slideshow">
-            <div class="value_slide">
-                <div class="value_img value_img-1"></div>
-                <div class="value_name">Jasmine Flowers</div>
-                <div class="value_price">$258</div>
-            </div>
-            <div class="value_slide">
-                <div class="value_img value_img-2"></div>
-                <div class="value_name">Lily Flowers</div>
-                <div class="value_price">$310</div>
-            </div>
-            <div class="value_slide">
-                <div class="value_img value_img-3"></div>
-                <div class="value_name">Rose Flowers</div>
-                <div class="value_price">$114</div>
-            </div>
-            <div class="value_slide">
-                <div class="value_img value_img-4"></div>
-                <div class="value_name">Amaris Flowers</div>
-                <div class="value_price">$410</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="decoration">
-        <div class="block block_upend">
-            <div class="img-block">
-                <img src="/img/fp.jpg" alt="flower" class="img-fl">
-            </div>
-            <div class="text text_upend">
-                <div class="header header_b">Let’s try to campaign <br><a href="#">flowers decoration in your home </a></div>
-                <div class="button"><a href="#">Get Started</a></div>
-            </div>
-            <div class="bg-plant">
-                <img src="/img/bg/2plant.svg" alt="plant">
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="logo">
-            <img src="img/logo.svg" alt="logo">
-            <div class="logo_text">Salatri.</div>
-        </div>
-        <div class="footer">
-            <div class="footer_text">Start your day with the spirit of exercising and you will get many very important benefits</div>
-            <div class="footer_social">
-                <div class="footer_circle">
-                    <a href="#"><img src="img/social/fb.svg" alt="fb"></a> 
+            <div class="content__indent-top">
+                <div class="title">
+                    <p class="fw">Think’s important</p>
+                    <p class="decor">Flowers in your area<p>  
                 </div>
-                <div class="footer_circle">
-                    <a href="#"><img src="img/social/tw.svg" alt="tw"></a>
-                </div>
-                <div class="footer_circle">
-                   <a href="#"><img src="img/social/inst.svg" alt="inst"></a>  
-                </div>
+                <div class="content__indent-sm content__text">People have been using natural objects, such as tree stumps, rocks and moss, as furniture since thebeginning of human civilisation. </div>
+                <button class="button">Read More</button>
             </div>
-            <div class="wrapper">
-                <div class="footer_info">
-                    <div class="footer_title">Product</div>
-                        <a href="#" class="footer_link">About</a>
-                        <a href="#" class="footer_link">How It’s Work</a>
-                        <a href="#" class="footer_link">Careers</a>
-                        <a href="#" class="footer_link">Blog</a>
-                        <a href="#" class="footer_link">Mobile</a>
+        </div>
+        <div class="important-img">
+            <img src="/img/bg/1plant.svg" alt="plant">
+        </div>
+    </section>
+    
+    <section id="collection" class="variety">
+        <div class="container content d-flex">
+            <div class="content__indent-top">
+                <div class="title content__title-width">
+                    <p class="fw">Decorate your home <br>with a <a class="decor decor__fw">variety of flowers</a></p>
+                </div>
+                <div class="content__indent-sm content__text">flowers present a seemingly endless variety of combinations. They range in size from minute blossoms to giant blooms. In some plants, such as poppy, magnolia, tulip, and petunia, each flower is relatively large </div>
+                <button class="button">Read More</button>
+            </div>
+            <div class="content__indents-variety">
+                <img src="/img/fl.jpg" alt="flower" class="content__img">
+            </div>
+        </div>
+        <div class="content__variety-img">
+            <img src="/img/bg/2plant.svg" alt="plant">
+        </div>
+    </section>
+
+    <section id="shop" class="value">
+        <div class="container">
+            <div class="title">
+                <p class="fw">More Value from</p>
+                <p class="decor">this Flowers</p>
+            </div>
+            <div class="value_indent-top">
+                <nav class="value_nav">
+                    <ul class="value_menu">
+                        <li><a href="#" class="value_link">Special Deals</a></li>
+                        <li><a href="#" class="value_link">Populer</a></li>
+                        <li><a href="#" class="value_link">Recommendation</a></li>
+                        <li><a href="#" class="value_link">Best Price</a></li>
+                    </ul>
+                    <div class="swiper">
+                        <button class="left"><img src="img/left.svg" alt=""></button>
+                        <button class="right"><img src="img/right.svg" alt=""></button>
                     </div>
-                    <div class="footer_info">
-                        <div class="footer_title">Support</div>
-                        <a href="#" class="footer_link">Help/FAQ</a>
-                        <a href="#" class="footer_link">Documentation</a>
-                        <a href="#" class="footer_link">Guide</a>
-                        <a href="#" class="footer_link">Tutorial</a>
+                </nav>
+            </div>
+            <div class="value_slideshow">
+                <div class="value_slide">
+                    <div class="value_indent">
+                        <img src="img/value/jasmine.jpg" alt="jasmine" class="value_img">
                     </div>
+                    <div class="value_name">Jasmine Flowers</div>
+                    <div class="value_price">$258</div>
+                </div>
+                <div class="value_slide">
+                    <div class="value_indent">
+                        <img src="img/value/lily.jpg" alt="lily" class="value_img">
+                    </div>
+                    <div class="value_name">Lily Flowers</div>
+                    <div class="value_price">$310</div>
+                </div>
+                <div class="value_slide">
+                    <div class="value_indent">
+                        <img src="img/value/rose.jpg" alt="rose" class="value_img">
+                    </div>
+                    <div class="value_name">Rose Flowers</div>
+                    <div class="value_price">$114</div>
+                </div>
+                <div class="value_slide">
+                    <div class="value_indent">
+                        <img src="img/value/amarise.jpg" alt="amarise" class="value_img">
+                    </div>
+                    <div class="value_name">Amaris Flowers</div>
+                    <div class="value_price">$410</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="decoration">
+        <div class="container content d-flex">
+            <div class="content__indent-top">
+                <div class="title">
+                    <p class="fw">Let’s try to campaign</p>
+                    <p class="decor">flowers decoration in your home</p>
+                </div>
+                <div class="content__indent-btn">
+                    <button class="button">Get Started</button>
+                </div>
+            </div>
+            <div class="content__indents-decoration">
+                <img src="/img/fp.jpg" alt="flower" class="content__img">
+            </div>
+        </div>
+        <div class="content__decoration-img">
+            <img src="/img/bg/2plant.svg" alt="plant">
+        </div>
+    </section> 
+    
+     <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                <a href="#" class="logo_name">Salatri.</a>
+            </div>
+                <div class="footer_text">Start your day with the spirit of exercising and you will get many very important benefits</div>
+                <div class="footer_social">
+                    <a href="#" class="footer_circle"><img src="img/social/fb.svg" alt="fb"></a> 
+                    <a href="#" class="footer_circle"><img src="img/social/tw.svg" alt="tw"></a>
+                    <a href="#" class="footer_circle"><img src="img/social/inst.svg" alt="inst"></a>
+                </div>
+            <div class="footer">
+                <div class="wrapper">
                     <div class="footer_info">
-                        <div class="footer_title">Services</div>
-                        <a href="#" class="footer_link">About</a>
-                        <a href="#" class="footer_link">Sumbit on issue</a>
-                        <a href="#" class="footer_link">Support </a>
-                        <a href="#" class="footer_link">Company us</a>
+                        <div class="footer_title">Product</div>
+                            <a href="#" class="footer_link">About</a>
+                            <a href="#" class="footer_link">How It’s Work</a>
+                            <a href="#" class="footer_link">Careers</a>
+                            <a href="#" class="footer_link">Blog</a>
+                            <a href="#" class="footer_link">Mobile</a>
+                        </div>
+                        <div class="footer_info">
+                            <div class="footer_title">Support</div>
+                            <a href="#" class="footer_link">Help/FAQ</a>
+                            <a href="#" class="footer_link">Documentation</a>
+                            <a href="#" class="footer_link">Guide</a>
+                            <a href="#" class="footer_link">Tutorial</a>
+                        </div>
+                        <div class="footer_info">
+                            <div class="footer_title">Services</div>
+                            <a href="#" class="footer_link">About</a>
+                            <a href="#" class="footer_link">Sumbit on issue</a>
+                            <a href="#" class="footer_link">Support </a>
+                            <a href="#" class="footer_link">Company us</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer_img-plant">
-            <img src="img/bg/footer.svg" alt="plant"> 
+            <img src="img/bg/footer.svg" alt="plant" class="footer_plant"> 
         </div>
-    </footer>
+    </footer> 
 </body>
+<script src="src/app.js"></script>
 </html>

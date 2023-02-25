@@ -1,100 +1,136 @@
-header    
-    padding: 56px 60px 69px 130px
-    position: relative
-    height: 761px 
-    font-weight: 500
-    background-color: #f4f7f4
-    
+.container 
+    width: 1180px
+    margin: 0 auto
+
 .header
-    margin-top: 30px
-    width: 563px
+    background-color: #f4f7f4
+    padding-top: 56px
+    
+.title
     font-size: 50px
     line-height: 75px
-    &_w
-        width: 604px
-    &_b
-        margin-bottom: 45px
+    width: 563px
+    &__indent-top
+        margin-top: 30px
+    .decor
+        color: #145855
+        text-decoration: underline
+        &__fw
+            font-weight: 500
+.fw
+    font-weight: 400
 
-.header > a
-    color: #145855
-    text-decoration: underline
+.topnav
+    // padding: 26px 148px 26px 130px
+    // position: fixed
+    // z-index: 50
+    // width: 100%
+    // background-color: #fff
+    // box-shadow: -5px 1px 7px #C5C5C5
+
+.burger-menu
+    display: none
 
 .logo
     display: flex
-    justify-content: space-between
-    width: 90px 
+    align-items: center
     &_name
-        padding: 0 202px 0 23px
+        margin-left: 22px
         color: #000
         font-size: 24px
-        line-height: 28px 
         letter-spacing: 1px
 
-nav
+.navbar 
     display: flex
-    ul
+    align-items: center
+    .menu-dropdown
+        margin: 0 253px 0 202px
+        .nav-menu
+            display: flex
+            li
+                padding-right: 55px
+            li:last-child
+                padding-right: 0
+            li > a
+                font-size: 16px  
+                color: #282A30
+                position: relative
+                &:after 
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: -5px
+                    height: 2px
+                    width: 0
+                    border-radius: 5px
+                    background: linear-gradient(90deg, #849A72 25%, #145855 100%)
+                    transition: 0.3s  
+                &:hover 
+                    color: #145855         
+                &:hover:after 
+                    width: 100%
+
+    .btn
         display: flex
-        justify-content: space-between
-        margin: -36px auto  
-        li
-            padding-right: 55px
-        li > a
-            font-size: 16px  
-            color: #282A30
-        a:hover
-            border-bottom: 2px solid #145855 
-    .btn 
-        display: flex
-        margin-top: -36px
         &_shop
             margin-right: 50px
 
-.descr
-    &_name
-        font-size: 14px 
-        letter-spacing: 0.5em
-        color: #145855
-        margin-top: 165px
-        text-transform: uppercase
-.button 
-    margin-top: 30px
-
-.button a
-    color: #145855
-    font-size: 18px 
-    text-align: center
+.home
+    position: relative
+    height: 761px
+    background-color: #f4f7f4
+    .descr 
+        padding-top: 160px
+        .name
+            font-size: 14px 
+            letter-spacing: 8px
+            color: #145855
+            font-weight: 500
+            text-transform: uppercase
+.button
     border: 1px solid #145855
-    width: 180px 
-    height: 55px
     border-radius: 40px
     padding: 14px 42px
     cursor: pointer
-    text-decoration: none
     transition-duration: 1s
+    color: #145855
+    font-size: 18px 
+    text-align: center
+    background-color: inherit
+    outline: none
+    &:hover,
+    &:focus
+        color: #fff
+        border: 1px solid transparent
+        border-image: linear-gradient(90deg, #849A72 25%, #145855 100%)
+        background: linear-gradient(90deg, #849A72 25%, #145855 100%)
+        transition-duration: 500ms
+    &:active
+        transform: translateY(2px)
+        filter: saturate(150%)     
 
-.button a:hover
-    border: none
-    background: linear-gradient(90deg, #849A72 25%, #145855 100%)
-    color: #fff
-    transition-duration: 500ms
-     
-.box
-    margin-top: 30px
+.shell
+    margin-top: 55px
     display: flex
+    align-items: center
     .ellipse 
-        margin-top: 25px
+        margin-left: 20px
         background-color: #145855
         width: 40px
         height: 40px
         border-radius: 50%
-        margin-left: 20px
-        .playpause
-            display: block
-            width: 15px
-            height: 15px
-            margin: 13px
+        // &:hover
+        // background-color: none
+        // border: 1px solid #145855
+        // border-image: linear-gradient(90deg, #849A72 25%, #145855 100%)
+        // box-shadow: 10px 5px 5px linear-gradient(90deg, #849A72 25%, #145855 100%)
+    .playpause
+        display: block
+        width: 15px
+        height: 15px
+        margin: 13px
+
     .watch 
-        margin-top: 32px
         padding-left: 15px 
         color: #282A30
         text-decoration-line: underline
@@ -103,26 +139,25 @@ nav
 
 .bg-img
     position: absolute
-    top: 232px 
+    top: 150px 
     right: 60px
+    z-index: 2
     &_ellipse
         position: absolute
-        top: 320px
+        top: 487px
         right: 270px
 
 .tracery
-    display: block 
-    position: absolute
-    left: 50%
     &_flowers
         display: flex
-        justify-content: center
-        align-items: center
         position: absolute
-        bottom: -41px
-        left: 114px
-
-.shell
+        top: 228px
+        right: 46px
+    &_front:first-child
+        position: relative
+        right: 80px
+        bottom: -60px
+.bubble-tracery
     position: relative
 .bubble:first-child
     background-color: #8CBE6D
@@ -130,8 +165,8 @@ nav
     height: 65px
     border-radius: 50% 
     position: absolute
-    left: 38%
-    bottom: 320px
+    left: 43%
+    bottom: 344px
 
 .bubble:nth-child(2)
     background-color: #52A742
@@ -140,7 +175,7 @@ nav
     border-radius: 50%
     position: absolute
     right: 50%
-    bottom: 57px  
+    bottom: -7px
        
 .bubble:last-child  
     background-color: #145855
@@ -148,87 +183,105 @@ nav
     height: 74px
     border-radius: 50%
     position: absolute
-    left: 90%
-    bottom: -30px
+    right: 148px
+    top: 1px
 
 .important, .variety, .decoration
-    height: 859px
-    padding-left: 153px
-    position: relative
+    background-color: #fff
 
-.variety, .decoration
-    padding-right: 153px
-    margin: 44px 0 169px 0 
+.important 
+    height: 931px
 
-.block
-    display: flex
-    &_upend
-        flex-direction: row-reverse
-        
+.variety
+    height: 984px
+
+.decoration
+    height: 1014px
+
+
 .block > button
     padding: 13.75px 42px
 
-.bg-plant
+.d-flex
     display: flex
-    align-self: flex-end
-    padding: 0 0 3px 111px 
-    &_left
-        margin: 0 -58px -95px 0
 
-.img-fl
-    margin-top: 152px
-    width: 444px
-    height: 677px
-    border-radius: 30px
+.important-img
+    display: flex
+    justify-content: flex-end
+    margin-top: -161px
 
-.text
-    margin-top: 318px
-    padding-left: 80px
-    &_upend
-        padding-right: 109px
-    &_subheader 
+.content
+    &__title-width
+        width: 604px
+    &__img
+        object-fit: cover
+        max-width: 444px
+        height: 677px
+        border-radius: 30px
+    &__indent-top
+        margin-top: 288px
+    &__indent-sm
         margin: 21px 0 50px 0
+    &__text 
         font-weight: 400
         font-size: 16px
         line-height: 40px
         width: 619px
-    
+    &__indents 
+        margin-top: 152px
+        padding-right: 80px
+    &__indents-variety
+        margin-top: 150px
+        padding-left: 94px
+    &__indents-decoration
+        margin-top: 174px
+        padding-left: 94px
+    &__variety-img
+        margin-top: -65px
+    &__decoration-img
+        margin-top: -193px
+    &__indent-btn
+        margin-top: 30px
+
 .value  
     height: 882px
     background-color: #F4F7F8
-    padding: 120px 150px 100px
+    padding: 120px 0 100px
+    &_link
+        color: #C5C5C5
+        &:hover
+            color: #000000
     &_nav
         display: flex
         justify-content: space-between
-        ul
-            margin: 0
-            margin-top: 50px 
-            &_link
-                color: #C5C5C5
-                font-size: 18px
-                line-height: 27px
-            &_link:hover 
-                text-decoration: none 
-                color: #000000
-    
+        align-items: end
+    &_indent-top
+        margin-top: 50px
+    &_menu 
+        display: flex
+    &_menu > li 
+        margin-right: 44px
+    &_menu > ul
+        &_link
+            color: #000000
+            font-size: 18px
+            line-height: 27px
     &_slideshow
         display: flex
-        justify-content: center
+        justify-content: space-between
         margin-top: 70px
     &_img
-        margin: 0 15px 0 15px
-        display: flex
         height: 300px
         width: 262px
         border-radius: 30px
-    &_img-1
-        background: url('../img/jasmine.jpg') center (center / cover) no-repeat
-    &_img-2
-        background: url('../img/lily.jpg') center (center / cover) no-repeat
-    &_img-3
-        background: url('../img/rose.jpg') center (center / cover) no-repeat
-    &_img-4 
-        background: url('../img/amarise.jpg') center (center / cover) no-repeat
+        object-fit: cover
+    &_indent
+        margin-top: -31px
+    &_indent:first-child
+        margin-left: 0
+    &_indent:last-child
+        margin-left: 0
+        
     &_name
         margin-top: 45px
         padding: 0 
@@ -238,47 +291,21 @@ nav
 
 .swiper 
     display: flex
+    img 
+        margin: 0 auto
 
 .left, .right
+    background-color: inherit
     border: 2px solid #145855 
     width: 48px 
     height: 48px
     border-radius: 10px
-    position: relative
     margin-right: 30px
-.left:before, .right:before
-    content: ''
-    width: 2px 
-    height: 13px 
-    display: block
-    background-color: #145855
-    transform-origin: 100% 0%;
-    position: absolute
-    top: 12px
-    left: 204px
-    transform: translateX(-180px) rotate(45deg)
-.right:before
-    position: absolute
-    top: 20px
-    left: 204px
-.left:after, .right:after 
-    content: ''
-    width: 2px 
-    height: 13px 
-    display: block
-    background-color: #145855
-    transform-origin: 100% 0%
-    position: absolute
-    top: 147px
-    left: -113px
-    transform: rotate(-45deg) translateX(180px)
-.right:after
-    position: absolute
-    top: 139px
-    left: -112px
-
+    cursor: pointer
+.right
+    margin-right: 0
 footer
-    padding: 80px 0 0 115px
+    padding-top: 145px
     background-color: #F4F7F8
 .footer
     &_text
@@ -287,6 +314,7 @@ footer
         color: #5C6880
         font-weight: 400
         font-size: 16px
+        display: inline-block
     &_social
         display: flex
         justify-content: space-between
@@ -327,10 +355,10 @@ footer
     &_img-plant
         display: flex
         justify-content: flex-end
-        margin-top: -189px
+        margin-top: -210px
 .wrapper
     display: flex
-    margin: -225px 500px 0 
+    margin: -255px 500px 0
     padding-bottom: 66px
 
 
